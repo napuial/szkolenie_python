@@ -52,8 +52,13 @@ if st.session_state.quiz:
         for j, a in enumerate(q['answers']):
             st.markdown(f"<span style='margin-left: 20px;'>{chr(ord('a') + j)}) {a} {'✅' if j == q['correct'] else ''}</span>",
             unsafe_allow_html=True)
+        usuniecie_pytania = st.button(f"Usuń pytanie", key=f"btn_usun_pytanie_{i}")
+        if usuniecie_pytania:
+            st.session_state.quiz.pop(i-1) 
+            st.rerun()
 
 if st.session_state.quiz:
     st.subheader("Pobierz quiz jako JSON")
     quiz_json = json.dumps(st.session_state.quiz, ensure_ascii=False, indent=4)
     st.download_button("Pobierz quiz", quiz_json, file_name="quiz.json", mime="application/json")
+
