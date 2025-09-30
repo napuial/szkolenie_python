@@ -28,3 +28,7 @@ https://www.youtube.com/watch?v=AGZLzERzSxM)
 Sterowanie żabą po lewej stronie: 'w' - góra, 's' - dół
 </br>
 Sterowanie żabą po prawej stronie: 'strzałka w górę' - góra, 'strzałka w dół' - dół
+</br>
+</br>
+### playlista projektów:
+https://youtube.com/playlist?list=PL_MXhLr4e1ypmaE25ALqdr6OG_DaMt_lt&si=3hx3gPys_vKH7D33
